@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "description": "A pure js implementation of rabin fingerprinting",
+  "main": "index.js",
+  "scripts": {
+    "test": "happiness && mocha",
+    "prepublish": "npm test",
+    "test-browser": "mochify --wd"
+  },
+  "keywords": [
+    "rabin",
+    "fingerprint",
+    "content defined chunking",
+    "CDC"
+  ],
+  "author": "Wes <wes@wesleytodd.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "happiness": "^7.1.2",
+    "mocha": "^3.2.0",
+    "mochify": "^2.18.1",
+    "pump": "^1.0.2",
+    "rabin": "^1.5.7"
+  },
+  "dependencies": {
+    "through2": "^2.0.3"
+  }
+}

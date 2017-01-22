@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '0.12'
+  - '1.8'
+  - '2.5'
+  - '3.3'
+  - '4.2'
+  - '5.5'
+script:
+  - 'npm test'
+  - 'if [ "x$TRAVIS_NODE_VERSION" = "x5.5" ]; then npm run test-browser; fi'
+env:
+  global:
+    - 'SAUCE_USERNAME=""'
+    - {secure: ""}
